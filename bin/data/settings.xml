@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<OSCPORTS>
+	<START>
+		<IN>4000</IN>
+    <OUT>5000</OUT>
+	</START>
+</OSCPORTS>
