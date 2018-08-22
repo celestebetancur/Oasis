@@ -191,7 +191,7 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::palette(){
    for(int i = 0; i < LEDS; i++){
-     colors.push_back(ofVec3f(255,255,255));
+     colors.push_back(ofVec3f(int(ofRandom(0,255)),int(ofRandom(0,255)),int(ofRandom(0,255))));
    }
 }
 
