@@ -3,14 +3,17 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 #include "ofxXmlSettings.h"
+#include "ofxGPIO.h"
 //Define num of ports to listen
 #define PORTS 16
+#define LEDS 50
 
 class ofApp : public ofBaseApp{
 	public:
 		void setup();
 		void update();
 		void draw();
+		void palette();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -23,6 +26,7 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+		void exit();
 		//OSC ping ESP
 		void pingSender();
 
@@ -61,4 +65,8 @@ class ofApp : public ofBaseApp{
 
 		//Video
 		ofVideoPlayer video;
+
+		LED strip;
+		int bright;
+		vector<ofVec3f> colors;
 };

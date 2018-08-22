@@ -2,11 +2,16 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+  
+  //LEDs setup
+  bright = 5;
+  palette();
+  strip.setupAPA102();
 
   //Init window settings
   ofSetWindowTitle("Oasis Control");
-	ofSetFrameRate(60);
-	ofSetVerticalSync(true);
+  ofSetFrameRate(60);
+  ofSetVerticalSync(true);
   ofSetBackgroundColor(0);
 
   height = ofGetHeight();
@@ -85,15 +90,20 @@ void ofApp::setup(){
 void ofApp::update(){
 
   ofSoundUpdate();
+  
   if(scene == 2){
     video.update();
   }
-
+  
+  //------------kind of scheduler -----------------------------
   timer = ofGetElapsedTimeMillis() - startTimer;
-  if(timer >= 1000){
+  if(timer >= 5000){
+    palette();
+    strip.setAPA102(LEDS,colors,bright);
     pingSender();
     startTimer = ofGetElapsedTimeMillis();
   }
+
   for(int i = 0; i < PORTS; i++){
     if(esp_state_control[i] >= 5){
       esp_state[i] = false;
@@ -176,6 +186,13 @@ void ofApp::draw(){
     ofSetColor(ofColor::white);
     video.draw(0,0,width,height);
   }
+}
+
+//--------------------------------------------------------------
+void ofApp::palette(){
+   for(int i = 0; i < LEDS; i++){
+     colors.push_back(ofVec3f(255,255,255));
+   }
 }
 
 //--------------------------------------------------------------
@@ -284,4 +301,11 @@ void ofApp::pingSender(){
     sender[i].sendMessage(m);
     esp_state_control[i]++;
   }
+}
+
+//-------------------------------------------------------------
+void ofApp::exit(){
+  ofLog() << "Exit";
+  strip.clearAPA102(LEDS + 5);
+  ofExit(0);
 }

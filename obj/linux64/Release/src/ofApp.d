@@ -512,7 +512,21 @@ obj/linux64/Release/src/ofApp.o: \
  /home/essteban/Builds/OF_0.10.0/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h \
  /home/essteban/Builds/OF_0.10.0/addons/ofxOsc/libs/oscpack/src/osc/../ip/PacketListener.h \
  /home/essteban/Builds/OF_0.10.0/addons/ofxXmlSettings/src/ofxXmlSettings.h \
- /home/essteban/Builds/OF_0.10.0/addons/ofxXmlSettings/libs/tinyxml.h
+ /home/essteban/Builds/OF_0.10.0/addons/ofxXmlSettings/libs/tinyxml.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/ofxGPIO.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/LogHighLight.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/gpio.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/i2c.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/spi2.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/pwm.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/kalman.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/mcp.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/font.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/readata.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/google_image.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/gpio_state.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/led.h \
+ /home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/oled.h
 
 /home/essteban/Builds/OF_0.10.0/apps/myApps/Oasis/src/ofApp.h:
 
@@ -1567,3 +1581,31 @@ obj/linux64/Release/src/ofApp.o: \
 /home/essteban/Builds/OF_0.10.0/addons/ofxXmlSettings/src/ofxXmlSettings.h:
 
 /home/essteban/Builds/OF_0.10.0/addons/ofxXmlSettings/libs/tinyxml.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/ofxGPIO.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/LogHighLight.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/gpio.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/i2c.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/spi2.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/pwm.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/kalman.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/mcp.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/font.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/readata.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/google_image.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/gpio_state.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/led.h:
+
+/home/essteban/Builds/OF_0.10.0/addons/ofxGPIO/src/oled.h:
